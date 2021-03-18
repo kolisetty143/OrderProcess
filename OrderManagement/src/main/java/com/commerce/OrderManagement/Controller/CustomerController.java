@@ -20,7 +20,7 @@ public class CustomerController {
 	public ResponseEntity<Customer> addCustomer(@RequestBody Customer customer){
 		
 		Customer cus = customerService.cusAdd(customer);
-		
+	System.out.println("Hello");	
       return  ResponseEntity.ok(cus);
 	}
 	
